@@ -1,6 +1,6 @@
 package leetcode100;
 
-public class lc72 {
+public class L72 {
 	
 	public int minDistance(String word1, String word2) {
         int m = word1.length();
