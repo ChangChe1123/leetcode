@@ -1,1 +1,1 @@
-# Happy Vibe Coding
+Happy Vibe Coding
