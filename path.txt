@@ -13,4 +13,7 @@ AI:
 	决策 Navigation
 	控制 Control
 	
+面试: (1). BQ (2). 项目经验 (3). Coding
+Coding: (1). 算法题 (2). OOD (3). System Design
+
 *Python x9: 变量，运算符，控制流，数据类型，函数，面向对象，异常处理，I/O，模块库包
