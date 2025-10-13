@@ -1,0 +1,23 @@
+__init__构造期中即fields，比如可以定一个{}
+if grades 非空， if not grades 为空
+info += f"{','.join(self.subjects)}\n"  # output 从一个list of string 到 string "a,b,c"
+{self.get_average():.2f} 小数点后两位
+__age  private field
+if 0 < age < 10
+python 支持多继承, class Duck(Flyable, Walkable):
+@classmethod 类方法，修改访问类属性
+@staticmethod 静态方法 用于工具函数
+text[::-1] 反转string (创建，遍历，操作CRUD，API)
+"a,b,c".split(",")  # output is ['a','b','c']  从一个string到list of string
+list: append(元素), insert(索引，元素), remove(元素), pop(索引)
+函数参数：位置参数(实参按照位置顺序传入), 默认参数(形参),关键字参数(实参可以不按照形參顺序)
+可变参数:
+def func1(*args):
+	xxx
+func(1,2,3)
+
+def func2(**kwargs):
+	xxx
+func2(a=1,b=2)
+python函数可以返回多个result
+函数嵌套，闭包closure = 内部函数 + 引用外部变量
