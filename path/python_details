@@ -21,3 +21,12 @@ def func2(**kwargs):
 func2(a=1,b=2)
 python函数可以返回多个result
 函数嵌套，闭包closure = 内部函数 + 引用外部变量
+
+Shallow_copy: 创建一个新对象，但不复制子对象 copy.copy(list), 切片操作所得结果也是shallow copy
+Deep_copy: 创建一个新对象，包括子对象 copy.deepcopy(list)
+@property 将方法调用封装成属性调用
+生成器generators: 不一次性计算存储结果，每次yield暂停
+迭代器iterators: 实现__iter__() 与 __next__()
+装饰器decorators: @修改增加函数行为
+元类meta classes: 类的类，控制类的创建行为
+垃圾回收: 引用计数，分代垃圾回收机制
