@@ -16,4 +16,15 @@ AI:
 面试: (1). BQ (2). 项目经验 (3). Coding
 Coding: (1). 算法题 (2). OOD (3). System Design
 
+项目：行政类/研发类/工艺类
+    1. 制度文件爬取，遍历所有文件包含query的文件名 -> 对话流智能体 制度助手
+    2. 单点登录系统 -> 工作流智能体 一键会议差旅助手
+    3. 企业微信推送接口 -> 公司经营日报助手
+    4. CLIP模型 -> 报销单审查
+    5. 历史数据库，VLA大模型，Nginx二次开发 -> 零部件开发智能体
+    6. 机器视觉 -> 零部件故障诊断
+    7. 机器视觉 -> 工序规范检测
+
 *Python x9: 变量，运算符，控制流，数据类型，函数，面向对象，异常处理，I/O，模块库包
+*Spring Security x2: FilterChainProxy入口 -> SecurityFilterChain定义chain -> filters (用户，角色，权限),
+                     OAuth2 authorization code -> access token -> user details
