@@ -1,12 +1,15 @@
 软件开发：
 	前端: JavaScript, React, Angular.js
-	后端: (1). Java (2). SpringBoot, SpringCloud (3). Microservice, Kafka, Redis, ElasticSearch (4). Docker, Kubernetes
+	后端:    (1). Java (2). SpringBoot, SpringCloud
+	        (3). Microservice, Kafka, Redis, ElasticSearch
+	        (4). Docker, Kubernetes
 	运维: MySQL, Git, CI/CD Jenkins, Junit, Mockito, AWS
 	
 AI:
 	基础: (1). 数学: 微积分，线性代数，概率论 (2). 数据分析，数据挖掘 (3). Python, Numpy, Pandas, Matplotlib
 	算法: (1). 传统机器学习算法 (2). 深度学习算法: NN, CNN, RNN_Transformer (3). 强化学习算法
-	工程: (1). 软件智能体: 大模型应用 Prompt, Agent_MCP(RAG, Dify), LangChain  (2). 模型(大模型+多模态)预训练，微调，封装，部署 (3). 硬件智能体: Robot, UAV
+	工程: (1). 软件智能体: 大模型应用 Prompt, Agent_MCP(RAG, Dify), LangChain
+	        (2). 模型(大模型+多模态)预训练，微调，封装，部署 (3). 硬件智能体: Robot, UAV
 	
 具身智能:
 	感知 Perception
@@ -16,14 +19,23 @@ AI:
 面试: (1). BQ (2). 项目经验 (3). Coding
 Coding: (1). 算法题 (2). OOD (3). System Design
 
-项目：行政类/研发类/工艺类
-    1. 制度文件爬取，遍历所有文件包含query的文件名 -> 对话流智能体 制度助手
-    2. 单点登录系统 -> 工作流智能体 一键会议差旅助手
-    3. 企业微信推送接口 -> 公司经营日报助手
-    4. CLIP模型 -> 报销单审查
-    5. 历史数据库，VLA大模型，Nginx二次开发 -> 零部件开发智能体
-    6. 机器视觉 -> 零部件故障诊断
-    7. 机器视觉 -> 工序规范检测
+项目：研发类/工艺类/行政类
+    1. 研发类-零部件设计智能体：
+    连杆/曲轴/凸轮轴，零部件模板库和设计方案代码库并入知识库，输入设计需求会去查取历史设计方案，
+    根据历史方案数据交给大模型生成参数，去调用二次开发的NX接口生成零部件模型。
+    取代人为获取设计需求，查询规范文档，查询相似设计，NX设计数模，零件标注出图。
+    2. 研发类-试验数据分析与报告生成：
+    取代人为接收试验需求，编织试验指导书，完成试验，从YCTDB数据库下载数据，数据处理分析与图表绘制，生成报告。
+    编制的试验指导书上传数据中台，完成试验后的试验数据上传数据中台，非结构化的图片与报告上传LAS平台。
+    数据中台对报告要素数据清理，格式化，标准化，用户输入试验订单ID与试验目的，通过ID获取功能试验项，
+    从数据中台和LAS平台获取所有要素，确认报告模板，智能体调用插件工具数据计算，绘图制表，插件生成报告，返回下载链接。
+    3. 研发类-故障诊断与预警：
+    用户输入零部件故障描述，查询历史文档，生成故障诊断分析。
+    4. 工艺类-机器视觉：
+    零部件缺陷检测，生产线工序合规检测。
+    5. 行政类：
+    制度助手，一键差旅会议助手，经营日报推送，合同审查智能体。
+    用户上传合同文件，用户服务，文档下载存储，文档结构化解析，OCR解析，大模型风险分析，带风险提示的新合同文档生成。
 
 *Python x9: 变量，运算符，控制流，数据类型，函数，面向对象，异常处理，I/O，模块库包
 *Spring Security x2: FilterChainProxy入口 -> SecurityFilterChain定义chain -> filters (用户，角色，权限),
