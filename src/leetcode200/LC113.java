@@ -7,7 +7,7 @@ public class LC113 {
     // 如果是叶子节点，并且符合targetSum，把这条path记录到result
     // 如果不是叶子节点，往下递归到sub-problem
     // 来了一个node，先加到path中，处理完后会返回到上一层栈，再从path中remove
-    public List<List<Integer>> pathSum1(TreeNode root, int targetSUm){
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum){
         List<List<Integer>> result = new ArrayList<>();
         dfs(root, targetSum, new ArrayList<>(), result);
         return result;
@@ -21,8 +21,8 @@ public class LC113 {
                 result.add(new ArrayList<>(path));
             }
         }else{
-            dfs(node.left, targetSum-node.left.val, path, result);
-            dfs(node.right, targetSum-node.right.val, path, result);
+            dfs(node.left, targetSum-node.val, path, result);
+            dfs(node.right, targetSum-node.val, path, result);
         }
         path.remove(path.size()-1);
     }
